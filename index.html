@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSE 412 Section 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+      <nav class="sticky">
+        <a href="#html">HTML</a> |
+        <a href="#css">CSS</a>
+      </nav>
+      <h1 class="title", id="html">Some HTML:</h1>
+      <div>
+        <h1> I am just a header.</h1>
+        <h2> I am also a header (but smaller).</h2>
+        <p>I am a paragraph!</p>
+        <p id="special-p">Please make me prettier! I am a paragraph that <span>doesn't</span> want to look the same as other paragraphs.</p>
+        <p class = "span-example">You may also use <span>span</span> to make a certain inline element prettier.</p>
+      </div>
+      <div id="list-part">
+        <!-- if you need to write < or >, because these are used for tags in HTML, we need to escape them.
+        useful tool to convert your text to escaped text: http://htmlescape.net/htmlescape_tool.html -->
+        <p>You can list things in HTML, of course (use &lt;ol&gt; for a numbered list and &lt;ul&gt; to create list without number):</p>
+        <ol>
+          <li>1.0</li>
+          <li>2.0</li>
+            <ul>
+              <li>2.1</li>
+              <li>2.2</li>
+              <li>2.3</li>
+            </ul>
+        </ol>
+      </div>
+      <div id="image-part">
+        <!-- src could be an url or a local path, you can also add styles such as width height or alt to it! -->
+        <p>You may also put image on the page by:</p>
+        <img src="https://courses.cs.washington.edu/courses/cse412/21sp/thumb/interaction.png">
+      </div>
+      <p>You can also jump to a certain part of a website by using an archor tag:</p>
+       <button><a href="#list-part">click here to jumpo to the list example part</a></button>
+      <p id="normal">Without using CSS, there are some useful HTML tags that could directly edit text such as <strong>strong</strong>, <em>em</em>, <big>big</big>, <small>small</small>, and <code>code</code>.</p>
+      <h1 class="title", id="css">CSS Style demo:</h1>
+      <p>Okay, paragraphs say they want to be stylish, following the style css and try commenting out different parts!</p>
+    </body>
+
+</html>

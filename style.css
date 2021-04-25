@@ -1,0 +1,121 @@
+
+/*----------------------------------------------------------------------------------------*/
+
+/* stylize h1. */
+h1 {
+	color: #492a7c;
+	font-style: italic;
+}
+
+/* stylize h1 in class title.
+See what happened if you commented out code below (the cascading property of CSS)*/
+.title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+	font-style: normal;
+	padding-top: 15px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*change style of all <p>*/
+p {
+  color: #492a7c;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+  margin: 10px 0 0 0;
+}
+
+/*change the p with id special-p*/
+#special-p {
+	color: orange;
+	text-align: center;
+	border: 2px solid pink;
+	font-family: 
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+/*Example of use of span*/
+span {
+	color: red;
+	text-decoration: underline;
+	background: rgb(255, 255, 0);
+}
+
+/* ::after is a use of */
+.span-example::after {
+	content: " (yes I am using span on span!)";
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+/*
+here we stylize list as an example of use of Descendant combinator,
+Child combinator, and General sibling combinator.
+(search css selectors to read more!)
+*/
+ol li {
+	color: blue;
+}
+ul > li {
+	text-decoration: line-through;	
+}
+#list-part + div {
+	width: 400px;
+	background: pink;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/* stylize <button>. */
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	background: #fff;
+	box-shadow: 0 3px 5px 0 #0000003b;
+}
+button:hover {
+	cursor: pointer;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*img opacity*/
+img {
+	opacity: 0.8;
+}
+
+img:hover{
+	opacity: 1;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgb(200,200,200);
+}
+
+
+#normal {
+	color: black;
+	font-weight: normal;
+}
