@@ -90,7 +90,7 @@ button:hover {
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 835px;
 	background: rgb(200,200,200);
 }
 
