@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>CSE 412 Section 5</title>
+      <link rel="stylesheet" href="demostyle.css">
+  </head>
+
+  <body>
+    <div class="content">
+      <nav class="sticky">
+        <a href="#text-part">TEXT</a> |
+        <a href="#image-part">IMAGE</a> |
+        <a href="#others-part">OTHERS</a>
+      </nav>
+      <p class="explain">In this section, we will explore basic HTML/CSS which you could refer to when 
+        designing your final projects. We will cover more interactive part and embed your visualization in 
+        a Web in the next section. For now, we will focus on static text and image, and how to stylize them here. Let's go!
+
+      <div id="text-part">
+        <h1 class="title", class="html">HTML/CSS-TEXT:</h1>
+        <div id="html-text">
+        <h3>HTML:</h3>
+        <p>Here we demostrate how you can write things in HTML and stylize your text!</p>
+        <p class="explain">Heading elements: you can use <code>h1</code> to <code>h6</code> to represent headers in different size. All headings are block elements. They cannot contain other elements, just text.</p>
+        <h1>a header</h1>
+        <h2>a header</h2>
+        <h3>a header</h3>
+        <h4>a header</h4>
+        <h5>a header</h5>
+        <h6>a header</h6>
+
+        <p class="explain">The <code>p</code> tag defines a paragraph of text:</p>
+        <p>Some text</p>
+
+        <p class="explain">The <code>br</code> tag can be use to start a new line:
+        <p>Some text<br>A new line</p>
+
+        <p class="explain">There are some convenient HTML tags that could directly stylize inline elements without using CSS: </p>
+        <p>Such as <big>big</big>, <code>code</code>, <del>del</del>, <em>em</em>, <ins>ins</ins>, <mark>mark</mark>, <q>q for quote</q>, <small>small</small>, <strong>strong</strong>, <sub>sub</sub>, <sup>sup</sup>. </p>
+
+        <p class="explain">In general, you could use <code>span</code> to stylize any inline text as you want:</p>
+        <p>This is an example of span that make this <span style="color:red">text</span> red.</p>
+
+        <p class="explain">When you are making your final project, you may also want to use lists: The <code>ol</code> tag can be used to create a numbered list, and the <code>ul</code> tag can be used to create list without number:</p>
+        <ol>
+          <li>A</li>
+          <li>B</li>
+            <ul>
+              <li>B.a</li>
+              <li>B.b</li>
+              <li>B.c</li>
+            </ul>
+        </ol>
+        <p class="explain">The <code>a</code> tag defines a hyperlink:</p>
+        <a href="https://courses.cs.washington.edu/courses/cse412/21sp/">This is linked to our CSE 412 Website</a>
+
+        <p class="explain">The <code>hr</code> tag adds an horizontal line in the page:</p>
+        <hr>
+      </div>
+        <h3 class="explain">CSS:</h3>
+        <p class="explain">Here we are going to show some common CSS properties for text! Open the "demostyle.css" and follow us!</p>
+        <p class="explain">The <code>color</code> property is used to set the color of the text.
+          which can be specified by <ul>
+            <li>a color name - like "red"</li>
+            <li>a HEX value - like "#ffffff"</li>
+            <li>an RGB value - like "rgb(255,255,0)"</li>
+          </ul>
+        <p class="demo" id="color-demo">Assign a color in #color-demo in the CSS to see how this line changes!</p>
+        <p class="explain">The <code>text-align</code> property is used to set the horizontal alignment of a text. A text can be <code>left</code> or <code>right</code> aligned, <code>center</code>, or <code>justify</code>.</p>
+        <p class="demo" id="align-demo">Try different text-align values in #align-demo in the CSS to see how this line changes!</p>
+        <p class="explain">The <code>text-decoration</code> property is used to set or remove decorations from text. Common available values are <code>none</code>, <code>overline</code>, <code>line-through</code>, or <code>underline</code>.</p>
+        <p class="demo" id="decoration-demo">Try different text-decoration values in #decoration-demo in the CSS to see how this line changes!</p>
+        <p class="explain">The <code>text-transform</code> property is used to specify uppercase and lowercase letters in a text. Common available values are <code>uppercase</code>, <code>lowercase</code>, or <code>capitalize</code>.</p>
+        <p class="demo" id="transform-demo">Try different text-transform values in #transform-demo in the CSS to see how this line changes!</p>
+        <p class="explain">The <code>text-indent</code> property is used to specify the indentation of the first line of a text.</p>
+        <p class="demo" id="indent-demo">Try different values in #indent-demo in the CSS to see how this line changes!</p>
+        <p class="explain">The <code>text-shadow</code> property is used to adds shadow to text.<br>It consists of 4 values: <code>text-shadow: horizontal shadow, vertical shadow, blur effect range, color of shadow;</code></p>
+        <p class="demo" id="shadow-demo">Try different values in #shadow-demo in the CSS to see how this line changes!</p>
+      </div>
+      <hr>
+      <div id="image-part">
+        <h1 class="title", class="html">HTML/CSS-IMAGE:</h1>
+        <h3 class="explain">HTML:</h3>
+        <p class="explain">You can add image to the page by using <code>img</code>, and you can use either a path or an absolute URL for src:
+          <br>For example, we can embed an image from our cse412 website by <code>&lt;img src="https://courses.cs.washington.edu/courses/cse412/21sp/thumb/interaction.png"&gt;:</code></p>
+        <img src="https://courses.cs.washington.edu/courses/cse412/21sp/thumb/interaction.png">
+        <h3 class="explain">CSS:</h3>
+        <p class="explain">You could use <code>&lt;img src="https://courses.cs.washington.edu/courses/cse412/21sp/thumb/interaction.png" width = "100" height = "100" &gt;</code> to customize the width or height, or we can put width/height in CSS to make it more organized.</p>
+        <div class="demo" id="image-demo">
+          Try different values in #image-demo img in the CSS to see how the image changes!<br>
+          <img src="https://courses.cs.washington.edu/courses/cse412/21sp/thumb/interaction.png">
+          <br>Image is also a good place to demostrate the use of <code>hover</code>. As we have mentioned during the lecture about animations in CSS, try it yourself by changing transition values in #image-demo img and hover!
+        </div>
+        <p class="explain">
+      </div>
+      <hr>
+      <div id="others-part">
+        <h1 class="title", class="html">HTML/CSS-OTHERS:</h1>
+        <p class="explain">
+          As you may have noticed, we used <code>div</code> in the HTML file as a container for each parts.
+          We could put more than one HTML element in the division, group together elements in div and can apply CSS for them.
+          The div tag is very flexible in creating web layouts and easy to modify.</p>
+        <h3 class="explain">Brief introduction to Box Model</h3>
+        <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+        <img src="https://codinglead.github.io/images/box-model.png">
+        <p>Attention: when we set the width and height values for an element, we are setting the width and height of the content area. We also need to add padding, borders and margins when calculating the whole size of the element.</p>
+        <p>You can define margin by <code>margin-top</code>,
+          <code>margin-right</code>,
+          <code>margin-bottom</code>, 
+          <code>margin-left</code> respectively where the values could be <code>auto</code>(horizontally center the element within its container.), px, cm, etc., <code>%</code> of the width of the containing element, or <code>inherit</code>ed from the parent element.
+          Or you can use a margin shorthand: <code>margin: top-margin, right-margin, bottom-margin, left-margin</code>. Padding follows the similar rule. [Excercise: search and read properties of border and understand the border shorthand.]</p>
+        <div id="box-demo">Try editing #box-demo and comparing!</div>
+        <hr>
+        <p>There are also other cool parts of HTML/CSS besides basic text and image editing. Here we will introduce some, and please keep exploring on your own! <Strong>There are tons of things you could do with HTML/CSS which also means that it is more or less impossible to remember
+          every properties.</Strong> Therefore, please do not wait until you feel you have known everything and start building, because there would always be things you did not prepared for in HTML and CSS. Start learning by doing :-)!</p>
+        <p>You can make a slider by <code>&lt;input type="range" min="1" max="100" value="50"&gt;</code>:</p> <input type="range" min="1" max="100" value="50">
+        <p>You can also jump to a certain part of a website by using an archor tag achieved by <code>a</code>:</p>
+        <button><a href="#text-part">click here to jump to the text part</a></button>
+        <p><small>[Check .button and .button:hover to learn how the button above is stylized!]</small></p>
+      </div>
+      <p class="explain">You can use <code>table</code> to create tables:</p>
+      <table>
+        <tr>
+          <td>&nbsp;</td>
+          <td>1st</td>
+          <td>2nd</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>Unknown</td>
+          <td>Unknown</td>
+        </tr>
+      </table>
+      <p><small>[Check table, td, th to learn how the table above is stylized!]</small></p>
+      <p>Or making a rectangle by svg:
+      <svg width="100" height="100">
+          <circle cx="50" cy="50" r="30" stroke="#492a7c" stroke-width="5" fill="orange" />
+      </svg>
+    </div>
+  </body>
+</html>
